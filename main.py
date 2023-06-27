@@ -5,7 +5,6 @@ CLEAR_RETURN = "\033[H" #clears the terminal and starts from same line
 # -------------------- Importing modules --------------------
 try:
     from time import sleep
-    from playsound import playsound
 except FileNotFoundError:
     print(CLEAR)
     print("Importion Error : Essential files not found.")
@@ -75,7 +74,5 @@ def main_menu():
             sleep(1) #Slows down the program to give better UX
             exit()
 
-main_menu()
-
-
+main_menu() #runs the main menu
 # -------------------- End of Main code ---------------------
