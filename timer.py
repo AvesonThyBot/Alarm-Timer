@@ -1,0 +1,1 @@
+alarm_sound = "alarm.mp3" #global variable for sound
