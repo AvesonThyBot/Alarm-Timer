@@ -26,6 +26,28 @@ except Exception as e:
 
 # -------------------- Main code ----------------------------
 
-print("Alarm")
+# alarm code
+def alarm(seconds):
+    time = "10:00"
+    elapsed_time = 0
+    print(CLEAR)
+    while elapsed_time < seconds:
+        
+        sleep(1) #waits a second to make it a actual second
+        elapsed_time += 1
+        total_time = seconds - elapsed_time
+        min_left = total_time // 60 #get minutes
+        sec_left = total_time % 60 #get seconds
+        print(f"{CLEAR_RETURN}Alarm is set to go off in {min_left:02d}:{sec_left:02d}")
+    print(CLEAR)
+    
+    print(f"{CLEAR_RETURN}The total time of {time} is now over.")
+    playsound(alarm_sound)
+        
+# menu code
+def menu():
+    pass
 
+
+alarm(10)
 # -------------------- End of Main code ---------------------
